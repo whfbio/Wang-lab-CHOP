@@ -53,20 +53,14 @@ img {
   height: auto;
 }
 
-// Animated underline links — gradient trick for smooth width transition
+// Global links
 a {
   color: var(--accent);
   text-decoration: none;
-  background-image: linear-gradient(var(--accent), var(--accent));
-  background-size: 0% 1px;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  transition: background-size var(--transition-base), color var(--transition-fast);
-  padding-bottom: 1px;
+  transition: color var(--transition-fast);
 
   &:hover {
     color: var(--accent-hover);
-    background-size: 100% 1px;
   }
 }
 

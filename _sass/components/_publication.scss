@@ -2,10 +2,40 @@
 // Publication entry
 // =============================================================
 
-.pub-entry {
+.page-heading-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+
+  h2 {
+    margin: 0;
+  }
+
+  span {
+    color: var(--text-muted);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8125rem;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 640px) {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+}
+
+.pub-entry,
+.publication {
   padding: var(--space-6) 0;
   border-bottom: 1px solid var(--border-color);
   position: relative;
+  transition:
+    opacity var(--transition-base),
+    filter var(--transition-base),
+    transform var(--transition-base);
 
   &:last-child {
     border-bottom: none;
@@ -32,6 +62,29 @@
     flex-wrap: wrap;
     gap: var(--space-2);
     margin-top: var(--space-3);
+  }
+}
+
+#pubList:has(.publication:hover) .publication:not(:hover),
+#pubList:has(.pub-entry:hover) .pub-entry:not(:hover) {
+  opacity: 0.42;
+  filter: saturate(0.75);
+}
+
+#pubList .publication:hover,
+#pubList .pub-entry:hover {
+  transform: translateX(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pub-entry,
+  .publication {
+    transition: none;
+  }
+
+  #pubList .publication:hover,
+  #pubList .pub-entry:hover {
+    transform: none;
   }
 }
 

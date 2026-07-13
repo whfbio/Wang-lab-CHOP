@@ -4,7 +4,6 @@
       <h5>About</h5>
       <p>
         {{ site.name }}<br>
-        {{ site.title }}<br>
         {{ site.institution }}
       </p>
     </div>
@@ -12,15 +11,17 @@
       <h5>Contact</h5>
       <p>
         <a href="mailto:{{ site.email }}"><i class="fa-solid fa-envelope"></i> {{ site.email }}</a><br>
-        {% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}"><i class="fa-brands fa-github"></i> GitHub</a><br>{% endif %}
+        {% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a><br>{% endif %}
       </p>
     </div>
     <div>
       <h5>Links</h5>
       <p>
-        {% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}"><i class="ai ai-google-scholar"></i> Google Scholar</a><br>{% endif %}
-        {% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}"><i class="ai ai-researchgate"></i> ResearchGate</a><br>{% endif %}
-        <a href="https://github.com/sbryngelson/academic-website-template"><i class="fa-brands fa-github"></i> Use this template!</a>
+        {% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i> Google Scholar</a><br>{% endif %}
+        {% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}" target="_blank" rel="noopener noreferrer"><i class="ai ai-researchgate"></i> ResearchGate</a><br>{% endif %}
+        <a href="https://reporter.nih.gov/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-magnifying-glass-chart"></i> NIH RePORTER</a><br>
+        <a href="https://www.research.chop.edu/chop-cardiovascular-institute" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-heart-pulse"></i> CHOP CVI</a><br>
+        <a href="https://pathology.med.upenn.edu/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-building-columns"></i> Penn Pathology and Laboratory Medicine</a>
       </p>
     </div>
   </div>

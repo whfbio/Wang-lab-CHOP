@@ -44,6 +44,74 @@
   }
 }
 
+// Publication-derived word cloud for the home page
+.word-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2) var(--space-4);
+  margin: var(--space-4) 0 var(--space-6);
+  padding: var(--space-4) 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.word-cloud-item {
+  color: var(--text-secondary);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  background-image: none !important;
+  padding-bottom: 0;
+  transition:
+    color var(--transition-base),
+    opacity var(--transition-base),
+    transform var(--transition-base);
+
+  &:hover {
+    color: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  &.word-xl {
+    color: var(--text-primary);
+    font-size: 2rem;
+  }
+
+  &.word-lg {
+    font-size: 1.55rem;
+  }
+
+  &.word-md {
+    font-size: 1.25rem;
+  }
+
+  &.word-sm {
+    font-size: 1rem;
+  }
+
+  &.word-xs {
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+  }
+}
+
+.word-cloud:has(.word-cloud-item:hover) .word-cloud-item:not(:hover) {
+  opacity: 0.42;
+}
+
+@media (max-width: 640px) {
+  .word-cloud {
+    gap: var(--space-2) var(--space-3);
+  }
+
+  .word-cloud-item {
+    &.word-xl { font-size: 1.55rem; }
+    &.word-lg { font-size: 1.25rem; }
+    &.word-md { font-size: 1.0625rem; }
+  }
+}
+
 // Highlight callout — eye-catching announcement box
 .callout {
   border-left: 4px solid var(--accent);

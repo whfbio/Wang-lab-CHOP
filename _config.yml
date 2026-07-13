@@ -1,30 +1,30 @@
 # ============================================================
 # STEP 1: Your Identity (required)
 # ============================================================
-name: "Richard Feynman"
-title: "Professor of Physics"
-institution: "California Institute of Technology"
-email: richard@university.edu
+name: "Wang Lab"
+title: "Cardiovascular functional genomics and regenerative biology"
+institution: "Children's Hospital of Philadelphia and University of Pennsylvania"
+email: hfwang@email.unc.edu
 photo: headshot.jpg  # place your photo in images/
 
 # ============================================================
 # STEP 2: Your Links (optional -- delete any you don't use)
 # ============================================================
 links:
-  google_scholar: "https://scholar.google.com/citations?user=B7vSqZsAAAAJ"
-  github: "https://github.com/"
-  researchgate: "https://www.researchgate.net/"
+  google_scholar: "https://scholar.google.com/citations?user=8vKFkeoAAAAJ&hl=en"
+  github: ""
+  researchgate: ""
   orcid: ""
-  twitter: ""
-  linkedin: ""
+  twitter: "https://twitter.com/haofeiwang"
+  linkedin: "https://sg.linkedin.com/in/haofei-wang-97055b94"
   cv: ""  # e.g., "papers/cv.pdf" — leave blank to hide the CV icon
 
 # ============================================================
 # STEP 3: Site Settings
 # ============================================================
-accent_color: "#1a7a6d"      # theme color for links and buttons
+accent_color: "#cadb2b"      # theme color for links and buttons
 dark_mode: true              # show dark mode toggle in navbar
-description: "Academic webpage of Dr. Richard Feynman"
+description: "Wang Lab studies cardiovascular development, maturation, disease, and regeneration using functional genomics, single-cell and spatial technologies."
 baseurl: ""
 url: ""
 
@@ -37,13 +37,21 @@ analytics:
 # ============================================================
 nav_pages:
   - name: about
-  - name: publications
-  - name: talks
+    title: About
   - name: research
-  - name: software
+    title: Research
+  - name: publications
+    title: Publications
   - name: team
-  - name: teaching
+    title: Team
+  - name: join
+    title: Join
+  - name: fun
+    title: Fun
+  - name: resource
+    title: Resource
   - name: blogs
+    title: News
 
 # ============================================================
 # Advanced Settings (you probably don't need to change these)
@@ -102,6 +110,7 @@ exclude:
   - tags
   - Rakefile
   - node_modules
+  - vendor
   - package.json
   - package-lock.json
   - docs

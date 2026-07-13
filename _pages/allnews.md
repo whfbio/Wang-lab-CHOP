@@ -1,11 +1,11 @@
 ---
-title: "News"
+title: "Lab News"
 layout: gridlay
 sitemap: false
 permalink: /allnews.html
 ---
 
-## News
+## Lab News
 
 <div class="section-card" markdown="0">
 <div class="news-timeline">

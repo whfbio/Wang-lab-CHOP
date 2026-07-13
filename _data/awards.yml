@@ -1,7 +1,5 @@
-# Awards and honors, shown on the About page.
-# Each entry needs: name
-- name: Nobel Prize in Physics (1965)
-- name: Albert Einstein Award (1954)
-- name: E.O. Lawrence Award (1962)
-- name: Oersted Medal, AAPT (1972)
-- name: National Medal of Science (1979)
+# Selected focus areas, shown on the About page.
+- name: Cardiovascular development and maturation
+- name: Congenital and pediatric heart disease mechanisms
+- name: Direct cardiac reprogramming and heart regeneration
+- name: Single-cell, spatial, and functional genomics

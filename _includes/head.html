@@ -34,7 +34,10 @@
   <!-- Accent color from config -->
   {% if site.accent_color %}
   <style>
-    :root { --accent: {{ site.accent_color }}; --accent-hover: {{ site.accent_color }}; }
+    :root:not([data-bs-theme="dark"]), [data-bs-theme="light"] {
+      --accent: {{ site.accent_color }};
+      --accent-hover: #ffffff;
+    }
   </style>
   {% endif %}
 
@@ -46,7 +49,7 @@
       var saved = localStorage.getItem('theme');
       if (saved) {
         document.documentElement.setAttribute('data-bs-theme', saved);
-      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      } else {
         document.documentElement.setAttribute('data-bs-theme', 'dark');
       }
     })();

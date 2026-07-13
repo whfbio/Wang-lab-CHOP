@@ -73,4 +73,14 @@
     border-top: 1px solid var(--border-color);
     flex-wrap: wrap;
   }
+
+  .profile-summary {
+    color: var(--text-secondary);
+    font-size: 0.8125rem;
+    line-height: 1.65;
+    margin: var(--space-4) 0 0;
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border-color);
+    text-align: justify;
+  }
 }

@@ -1,20 +1,16 @@
-# Current students and postdocs.
+# Current lab members.
 # Each entry needs: name, photo, info
 # Optional: email, website, scholar, github, researchgate, cv
 # Photos go in images/ or images/team/
 
-- name: George Zweig
-  photo: team/george-zweig.svg
-  info: PhD Student, Quark Model
-
-- name: Albert Hibbs
-  photo: team/albert-hibbs.svg
-  info: PhD Student, Quantum Mechanics
-
-- name: Thomas Curtright
-  photo: team/thomas-curtright.svg
-  info: PhD Student, Quantum Field Theory
-
-- name: "This could be you!"
+- name: "Postdoctoral researcher"
   photo: rock.jpg
-  info: See openings for more info
+  info: Recruiting for cardiovascular functional genomics, single-cell and spatial technologies, and congenital heart disease
+
+- name: "PhD student"
+  photo: rock.jpg
+  info: Prospective trainees interested in developmental and regenerative cardiovascular biology are welcome to inquire
+
+- name: "Research technician"
+  photo: rock.jpg
+  info: Recruiting motivated scientists interested in helping establish new experimental and computational platforms
