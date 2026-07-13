@@ -26,7 +26,7 @@ accent_color: "#cadb2b"      # theme color for links and buttons
 dark_mode: true              # show dark mode toggle in navbar
 description: "Wang Lab studies cardiovascular development, maturation, disease, and regeneration using functional genomics, single-cell and spatial technologies."
 baseurl: ""
-url: ""
+url: "https://whfbio.github.io/Wang-lab-CHOP"
 
 # Google Analytics — paste your GA4 measurement ID, or leave blank
 analytics:
