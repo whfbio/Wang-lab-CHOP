@@ -13,8 +13,8 @@ permalink: /about/
 </div>
 
 <div class="profile-card about-lab-card">
-<div class="about-lab-logo" aria-label="Lab logo placeholder">
-<span>W</span>
+<div class="about-lab-logo">
+<img src="{{ "/images/logo_color.png" | relative_url }}" alt="Wang Lab logo" loading="lazy">
 </div>
 <div class="about-lab-copy">
 <h3 class="profile-name">About the Lab</h3>
