@@ -41,5 +41,5 @@ permalink: /join/details/
 <p>Please email a curriculum vitae, a brief cover letter or research statement, and contact information for three professional references to <a href="mailto:hfwang@email.unc.edu">hfwang@email.unc.edu</a>.</p>
 <p>Use the subject line: <strong>Application for Postdoctoral Researcher Position - Applicant Name</strong>.</p>
 <p>Applications will be reviewed on a rolling basis until the positions are filled.</p>
-<p><a href="{{ site.url }}{{ site.baseurl }}/join/" class="btn-pill btn-bib">Back to Join</a></p>
+<p><a href="{{ site.url }}{{ site.baseurl }}/team/" class="btn-pill btn-bib">Back to Team</a></p>
 </div>

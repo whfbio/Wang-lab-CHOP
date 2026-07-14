@@ -40,12 +40,15 @@ permalink: /team/
 {% if site.data.team_members.size > 0 %}
 ## Open Roles
 
-<div class="team-grid">
+<div class="team-grid" markdown="0">
 {% for member in site.data.team_members %}
 <div class="team-card">
 <img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo }}" class="team-photo" alt="{{ member.name }}" loading="lazy">
 <h4 class="team-name">{{ member.name }}</h4>
 <p class="team-info">{{ member.info }}</p>
+{% if member.url %}
+<a href="{{ member.url | relative_url }}" class="btn-pill btn-website team-role-button">Learn more details</a>
+{% endif %}
 </div>
 {% endfor %}
 </div>
