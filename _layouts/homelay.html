@@ -2,23 +2,31 @@
 layout: default
 ---
 
-<section class="home-image-hero" aria-label="Wang Lab hero">
-  <div class="home-image-hero__content">
-    <h1>Wang Lab @ CHOP</h1>
-    <p>Cardiovascular development, maturation, disease, and regeneration</p>
-    <a href="#home-details" class="home-image-hero__scroll">Explore the lab</a>
+<section class="home-image-hero" aria-label="Wang Lab hero carousel">
+  <div class="home-hero-slides" aria-hidden="true">
+    <div class="home-hero-slide active" style="background-image: url('{{ "/images/research/heartatlas_profile.png" | relative_url }}');"></div>
+    <div class="home-hero-slide" style="background-image: url('{{ "/images/research/carm1_profile.png" | relative_url }}');"></div>
+    <div class="home-hero-slide" style="background-image: url('{{ "/images/team-hero.png" | relative_url }}');"></div>
+    <div class="home-hero-slide" style="background-image: url('{{ "/images/fun-hero.png" | relative_url }}');"></div>
+    <div class="home-hero-slide" style="background-image: url('{{ "/images/contact-hero.png" | relative_url }}');"></div>
   </div>
+  <div class="home-image-hero__content">
+    <h1 data-hero-title>Wang Lab @ CHOP</h1>
+    <p class="home-hero-kicker" data-hero-kicker>Cardiovascular development, maturation, disease, and regeneration</p>
+    <a href="{{ site.url }}{{ site.baseurl }}/about" class="home-image-hero__scroll" data-hero-link>Learn More</a>
+  </div>
+  <button class="home-hero-control home-hero-control--prev" type="button" data-hero-prev aria-label="Previous hero slide">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+  <button class="home-hero-control home-hero-control--next" type="button" data-hero-next aria-label="Next hero slide">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
 </section>
 
 <div id="home-details" class="home-sections">
   <section class="home-detail-grid">
-    <div class="home-content">
-      {{ content }}
-    </div>
-
-    <div>
-      {% include profile-card.html %}
-      <div class="section-card" style="margin-top: var(--space-6);">
+    <div class="home-news-column">
+      <div class="section-card home-news-card">
         <h4 style="margin-top: 0;">Latest News</h4>
         <div class="news-timeline">
           {% for article in site.data.news limit:3 %}
@@ -30,6 +38,10 @@ layout: default
         </div>
         <p style="margin-top: var(--space-4);"><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">See all news &rarr;</a></p>
       </div>
+    </div>
+
+    <div class="home-content">
+      {{ content }}
     </div>
   </section>
 

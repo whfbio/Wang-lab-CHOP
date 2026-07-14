@@ -13,11 +13,14 @@ permalink: /team/
 
 <div class="section-card">
 <div class="pi-card">
+<a href="{{ site.url }}{{ site.baseurl }}/haofei-wang/" class="pi-card-photo-link" aria-label="Open Haofei Wang CV page">
 <img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}" class="pi-photo" alt="Haofei Wang" loading="lazy">
+</a>
 <div>
-<h3 class="pi-name">Haofei Wang</h3>
+<h3 class="pi-name"><a href="{{ site.url }}{{ site.baseurl }}/haofei-wang/">Haofei Wang</a></h3>
 <p style="font-style: italic; color: var(--text-secondary);">Principal Investigator, {{ site.institution }}</p>
 <div class="pi-links">
+<a href="{{ site.url }}{{ site.baseurl }}/haofei-wang/" class="icon-link" title="CV"><i class="ai ai-cv"></i></a>
 {% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
 {% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}" target="_blank" rel="noopener noreferrer" class="icon-link" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
 {% if site.links.linkedin and site.links.linkedin != "" %}<a href="{{ site.links.linkedin }}" target="_blank" rel="noopener noreferrer" class="icon-link" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>{% endif %}

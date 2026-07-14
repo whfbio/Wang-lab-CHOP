@@ -11,11 +11,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.38)),
-    url('/images/research/heartatlas_profile.png');
-  background-size: cover;
-  background-position: center;
+  background-color: #000000;
 
   @media (max-width: 768px) {
     min-height: 100vh;
@@ -24,10 +20,40 @@
   }
 }
 
+.home-hero-slides,
+.home-hero-slide {
+  position: absolute;
+  inset: 0;
+}
+
+.home-hero-slides {
+  z-index: 0;
+}
+
+.home-hero-slide {
+  opacity: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.38));
+  }
+
+  &.active {
+    opacity: 1;
+  }
+}
+
 .home-image-hero__content {
   width: min(880px, 100%);
   text-align: center;
   color: #ffffff;
+  position: relative;
+  z-index: 1;
 
   h1 {
     font-family: 'Source Serif 4', Georgia, serif;
@@ -46,6 +72,10 @@
     font-size: clamp(1rem, 2vw, 1.35rem);
     line-height: 1.6;
   }
+}
+
+.home-hero-kicker {
+  min-height: 2.2rem;
 }
 
 .home-image-hero__scroll {
@@ -77,6 +107,56 @@
   }
 }
 
+.home-hero-control {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: var(--radius-full);
+  background-color: rgba(0, 0, 0, 0.14);
+  color: #ffffff;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition:
+    background-color var(--transition-base),
+    border-color var(--transition-base),
+    transform var(--transition-base);
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 255, 255, 0.78);
+    transform: translateY(-50%) scale(1.04);
+  }
+}
+
+.home-hero-control--prev {
+  left: var(--space-8);
+}
+
+.home-hero-control--next {
+  right: var(--space-8);
+}
+
+@media (max-width: 768px) {
+  .home-hero-control {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .home-hero-control--prev {
+    left: var(--space-4);
+  }
+
+  .home-hero-control--next {
+    right: var(--space-4);
+  }
+}
+
 .home-sections {
   display: grid;
   gap: var(--space-12);
@@ -84,14 +164,25 @@
 
 .home-detail-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 340px;
+  grid-template-columns: 340px minmax(0, 1fr);
   gap: var(--space-12);
-  align-items: start;
+  align-items: stretch;
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
     gap: var(--space-8);
   }
+}
+
+.home-news-column {
+  display: flex;
+}
+
+.home-news-card {
+  width: 100%;
+  min-height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .home-grid {

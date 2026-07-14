@@ -5,29 +5,20 @@ sitemap: false
 permalink: /about/
 ---
 
-## About
+## Wang Lab @ CHOP
 
-<div class="section-card">
-<div class="pi-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}" class="pi-photo" alt="{{ site.name }}" loading="lazy">
-<div>
-<h3 class="pi-name">Haofei Wang</h3>
-<p style="font-style: italic; color: var(--text-secondary);">Principal Investigator, {{ site.institution }}</p>
-<div class="pi-links">
-{% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
-{% if site.links.cv and site.links.cv != "" %}<a href="{{ site.url }}{{ site.baseurl }}/{{ site.links.cv }}" class="icon-link" title="CV"><i class="ai ai-cv"></i></a>{% endif %}
-{% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}" target="_blank" rel="noopener noreferrer" class="icon-link" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
-{% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}" target="_blank" rel="noopener noreferrer" class="icon-link" title="GitHub"><i class="fa-brands fa-github"></i></a>{% endif %}
-{% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}" target="_blank" rel="noopener noreferrer" class="icon-link" title="ResearchGate"><i class="ai ai-researchgate"></i></a>{% endif %}
+<div class="callout callout-success" markdown="0">
+<div class="callout-title"><i class="fa-solid fa-microscope callout-icon"></i> Openning in Jan 2027</div>
+<p>The lab will open at the Children's Hospital of Philadelphia and the University of Pennsylvania. We welcome inquiries from prospective postdoctoral researchers, PhD students, and research technicians.</p>
 </div>
-{% if site.data.pi[0].education %}
-<ul style="margin-top: var(--space-4);">
-{% for education in site.data.pi[0].education %}
-<li>{{ education | replace: "-","&#8211;" }}</li>
-{% endfor %}
-</ul>
-{% endif %}
+
+<div class="profile-card about-lab-card">
+<div class="about-lab-logo" aria-label="Lab logo placeholder">
+<span>W</span>
 </div>
+<div class="about-lab-copy">
+<h3 class="profile-name">About the Lab</h3>
+<p class="profile-summary">The Wang Lab investigates the molecular and cellular mechanisms that regulate heart development, maturation, disease, and regeneration. We integrate chromatin biology, single-cell and spatial genomics, stem-cell models, and in vivo functional genomics to connect human genetic discoveries with mechanistic cardiovascular biology.</p>
 </div>
 </div>
 

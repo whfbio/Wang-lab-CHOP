@@ -146,6 +146,75 @@
     }, { passive: true });
   }
 
+  // ----- Home Hero Carousel -----
+
+  var heroSlides = document.querySelectorAll('.home-hero-slide');
+  var heroPrev = document.querySelector('[data-hero-prev]');
+  var heroNext = document.querySelector('[data-hero-next]');
+  var heroTitle = document.querySelector('[data-hero-title]');
+  var heroKicker = document.querySelector('[data-hero-kicker]');
+  var heroLink = document.querySelector('[data-hero-link]');
+  var heroIndex = 0;
+  var heroTimer = null;
+  var heroData = [
+    { title: 'Wang Lab @ CHOP', label: 'Cardiovascular development, maturation, disease, and regeneration', href: '/about' },
+    { title: 'Research', label: 'The Science we love', href: '/research' },
+    { title: 'Team', label: 'Science works better together', href: '/team' },
+    { title: 'Fun', label: 'Life beyond the lab', href: '/fun' },
+    { title: 'Contact', label: 'Get in touch!', href: 'mailto:hfwang@email.unc.edu' }
+  ];
+
+  function showHeroSlide(index) {
+    if (!heroSlides.length) return;
+    heroIndex = (index + heroSlides.length) % heroSlides.length;
+
+    heroSlides.forEach(function (slide, slideIndex) {
+      slide.classList.toggle('active', slideIndex === heroIndex);
+    });
+
+    if (heroKicker && heroData[heroIndex]) {
+      heroKicker.textContent = heroData[heroIndex].label;
+    }
+
+    if (heroTitle && heroData[heroIndex]) {
+      heroTitle.textContent = heroData[heroIndex].title;
+    }
+
+    if (heroLink && heroData[heroIndex]) {
+      heroLink.setAttribute('href', heroData[heroIndex].href);
+      heroLink.textContent = 'Learn More';
+    }
+  }
+
+  function startHeroAutoRotate() {
+    if (heroTimer) {
+      window.clearInterval(heroTimer);
+    }
+
+    heroTimer = window.setInterval(function () {
+      showHeroSlide(heroIndex + 1);
+    }, 10000);
+  }
+
+  if (heroSlides.length > 0) {
+    showHeroSlide(0);
+    startHeroAutoRotate();
+
+    if (heroPrev) {
+      heroPrev.addEventListener('click', function () {
+        showHeroSlide(heroIndex - 1);
+        startHeroAutoRotate();
+      });
+    }
+
+    if (heroNext) {
+      heroNext.addEventListener('click', function () {
+        showHeroSlide(heroIndex + 1);
+        startHeroAutoRotate();
+      });
+    }
+  }
+
   // ----- Fade-in on Scroll -----
 
   var fadeElements = document.querySelectorAll('.fade-in-section');

@@ -5,15 +5,6 @@ sitemap: false
 permalink: /
 ---
 
-### About the Lab
-
-The Wang Lab investigates the molecular and cellular mechanisms that regulate heart development, maturation, disease, and regeneration. We integrate chromatin biology, single-cell and spatial genomics, stem-cell models, and in vivo functional genomics to connect human genetic discoveries with mechanistic cardiovascular biology.
-
-<div class="callout callout-success" markdown="0">
-<div class="callout-title"><i class="fa-solid fa-microscope callout-icon"></i> Opening in 2027</div>
-<p>The lab will open at the Children's Hospital of Philadelphia and the University of Pennsylvania. We welcome inquiries from prospective postdoctoral researchers, PhD students, and research technicians.</p>
-</div>
-
 ### Latest Publication
 
 <div class="banner-frame" markdown="0">
