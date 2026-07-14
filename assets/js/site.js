@@ -161,7 +161,7 @@
     { title: 'Research', label: 'The Science we love', href: '/research' },
     { title: 'Team', label: 'Science works better together', href: '/team' },
     { title: 'Fun', label: 'Life beyond the lab', href: '/fun' },
-    { title: 'Contact', label: 'Get in touch!', href: 'mailto:hfwang@email.unc.edu' }
+    { title: 'Contact', label: 'Get in touch!', href: '/contact/' }
   ];
 
   function showHeroSlide(index) {
