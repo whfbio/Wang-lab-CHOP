@@ -13,3 +13,7 @@
   margin: 0 auto;
   padding: var(--space-8) var(--container-padding) 0;
 }
+
+body:not(.home-page) .site-container {
+  padding-top: calc(var(--space-8) + 4.5rem);
+}

@@ -2,12 +2,35 @@
 layout: default
 ---
 
-<div class="home-grid">
-  <div class="home-content">
-    {{ content }}
+<section class="home-image-hero" aria-label="Wang Lab hero">
+  <div class="home-image-hero__content">
+    <h1>Wang Lab @ CHOP</h1>
+    <p>Cardiovascular development, maturation, disease, and regeneration</p>
+    <a href="#home-details" class="home-image-hero__scroll">Explore the lab</a>
   </div>
+</section>
 
-  <div>
-    {% include sidebar.html %}
+<div id="home-details" class="home-sections">
+  <section class="home-detail-grid">
+    <div class="home-content">
+      {{ content }}
+    </div>
+
+    <div>
+      {% include profile-card.html %}
+      <div class="section-card" style="margin-top: var(--space-6);">
+        <h4 style="margin-top: 0;">Latest News</h4>
+        <div class="news-timeline">
+          {% for article in site.data.news limit:3 %}
+          <div class="news-item">
+            <div class="news-date">{{ article.date }}</div>
+            <div class="news-headline">{{ article.headline }}</div>
+          </div>
+          {% endfor %}
+        </div>
+        <p style="margin-top: var(--space-4);"><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">See all news &rarr;</a></p>
+      </div>
+    </div>
+  </section>
+
   </div>
-</div>

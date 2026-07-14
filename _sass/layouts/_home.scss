@@ -1,6 +1,98 @@
 // =============================================================
-// Home page — two-column grid, editorial feel
+// Home page — full-screen hero with editorial detail sections
 // =============================================================
+
+.home-image-hero {
+  min-height: 100vh;
+  margin: calc(-1 * var(--space-8)) calc(50% - 50vw) var(--space-12);
+  padding: calc(var(--space-16) + 4rem) var(--space-6) var(--space-16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.38)),
+    url('/Wang-lab-CHOP/images/research/heartatlas_profile.png');
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: 768px) {
+    min-height: 100vh;
+    margin-bottom: var(--space-8);
+    padding: calc(var(--space-12) + 4rem) var(--space-4) var(--space-12);
+  }
+}
+
+.home-image-hero__content {
+  width: min(880px, 100%);
+  text-align: center;
+  color: #ffffff;
+
+  h1 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    font-weight: 800;
+    line-height: 0.98;
+    margin: 0 0 var(--space-4);
+    color: #ffffff;
+  }
+
+  p {
+    max-width: 680px;
+    margin: 0 auto var(--space-8);
+    color: rgba(255, 255, 255, 0.88);
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(1rem, 2vw, 1.35rem);
+    line-height: 1.6;
+  }
+}
+
+.home-image-hero__scroll {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0 var(--space-5);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: var(--radius-full);
+  color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-image: none !important;
+  transition:
+    background-color var(--transition-base),
+    border-color var(--transition-base),
+    color var(--transition-base),
+    transform var(--transition-base);
+
+  &:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #000000;
+    transform: translateY(-2px);
+  }
+}
+
+.home-sections {
+  display: grid;
+  gap: var(--space-12);
+}
+
+.home-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: var(--space-12);
+  align-items: start;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+}
 
 .home-grid {
   display: grid;
@@ -26,6 +118,32 @@
     font-size: 1.0625rem;
     line-height: 1.8;
     color: var(--text-primary);
+  }
+}
+
+.section-heading-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+
+  h3 {
+    margin: 0;
+  }
+
+  a {
+    color: var(--text-secondary);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    background-image: none !important;
+
+    &:hover {
+      color: var(--accent);
+    }
   }
 }
 
@@ -143,5 +261,21 @@
     color: var(--text-secondary);
     font-size: 0.875rem;
     line-height: 1.5;
+  }
+}
+
+.news-timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-6);
+
+  .news-item {
+    border-bottom: none;
+    border-top: 1px solid var(--border-color);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
   }
 }

@@ -7,6 +7,10 @@ permalink: /research/
 
 <h2 class="research-page-title">Research</h2>
 
+<section class="research-word-cloud-section">
+{% include word-cloud.html %}
+</section>
+
 <div class="research-grid">
 
 <div class="research-card">
