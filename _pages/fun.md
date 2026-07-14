@@ -5,6 +5,8 @@ sitemap: false
 permalink: /fun/
 ---
 
+{% comment %}Regenerate this page with the latest shared navbar.{% endcomment %}
+
 ## Fun
 
 <div class="section-card">
