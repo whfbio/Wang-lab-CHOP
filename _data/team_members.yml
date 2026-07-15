@@ -4,14 +4,14 @@
 # Photos go in images/ or images/team/
 
 - name: "Postdoctoral researcher"
-  photo: rock.jpg
+  photo: scientist_3561725.png
   info: Recruiting for cardiovascular functional genomics, single-cell and spatial technologies, and congenital heart disease
   url: /join/details/
 
 - name: "PhD student"
-  photo: rock.jpg
+  photo: scientist_3561725.png
   info: Prospective trainees interested in developmental and regenerative cardiovascular biology are welcome to inquire
 
 - name: "Research technician"
-  photo: rock.jpg
+  photo: scientist_3561725.png
   info: Recruiting motivated scientists interested in helping establish new experimental and computational platforms

@@ -29,10 +29,11 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
     margin-bottom: var(--space-4);
-    border: 2px solid var(--bg-primary);
-    box-shadow: 0 0 0 1px var(--border-color);
+    background-color: #ffffff;
+    border: 6px solid #ffffff;
+    box-shadow: 0 0 0 2px var(--border-color);
     transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
