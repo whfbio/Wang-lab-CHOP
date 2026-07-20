@@ -2,7 +2,7 @@
   <div class="container" style="max-width: var(--container-max);">
     <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">
       <img src="{{ "/images/logo_png.png" | relative_url }}?v={{ site.time | date: "%s" }}" width="24" height="24" class="d-inline-block align-text-top" alt="" style="border-radius: 0;">
-      {{ site.name | escape }}
+      HFWang Lab @&nbsp;CHOP
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -20,6 +20,9 @@
         {% endfor %}
       </ul>
       <div class="d-flex align-items-center" style="gap: var(--space-2);">
+        <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle light mode">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
         <button class="search-toggle" id="searchToggle" aria-label="Search site">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>

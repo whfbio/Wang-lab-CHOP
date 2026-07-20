@@ -10,14 +10,19 @@
 
   var toggle = document.getElementById('darkModeToggle');
   var icon = document.getElementById('themeIcon');
+  var colorSchemeQuery = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
 
   function updateIcon() {
     if (!icon) return;
     var theme = document.documentElement.getAttribute('data-bs-theme');
     if (theme === 'dark') {
       icon.className = 'fa-solid fa-moon';
+      toggle.setAttribute('aria-label', 'Switch to light mode');
+      toggle.setAttribute('title', 'Switch to light mode');
     } else {
       icon.className = 'fa-solid fa-sun';
+      toggle.setAttribute('aria-label', 'Switch to dark mode');
+      toggle.setAttribute('title', 'Switch to dark mode');
     }
   }
 
@@ -29,6 +34,14 @@
       var next = current === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-bs-theme', next);
       localStorage.setItem('theme', next);
+      updateIcon();
+    });
+  }
+
+  if (colorSchemeQuery) {
+    colorSchemeQuery.addEventListener('change', function (e) {
+      if (localStorage.getItem('theme')) return;
+      document.documentElement.setAttribute('data-bs-theme', e.matches ? 'dark' : 'light');
       updateIcon();
     });
   }
@@ -157,11 +170,11 @@
   var heroIndex = 0;
   var heroTimer = null;
   var heroData = [
-    { title: 'Wang Lab @ CHOP', label: 'Cardiovascular development, maturation, disease, and regeneration', href: '/about' },
-    { title: 'Research', label: 'The Science we love', href: '/research' },
-    { title: 'Team', label: 'Science works better together', href: '/team' },
-    { title: 'Fun', label: 'Life beyond the lab', href: '/fun' },
-    { title: 'Contact', label: 'Get in touch!', href: '/contact/' }
+    { title: 'Haofei Wang Lab @\u00a0CHOP', label: 'Mapping Cardiovascular Cell States From Development To Maturation', href: '/about' },
+    { title: 'Research', label: 'The Science We Love', href: '/research' },
+    { title: 'Team', label: 'Science Works Better Together', href: '/team' },
+    { title: 'Fun', label: 'Life Beyond The Lab', href: '/fun' },
+    { title: 'Contact', label: 'Get In Touch!', href: '/contact/' }
   ];
 
   function showHeroSlide(index) {
