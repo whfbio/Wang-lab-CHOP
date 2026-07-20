@@ -197,13 +197,21 @@
   }
 
   [data-bs-theme="light"] .navbar-collapse,
-  :root:not([data-bs-theme="dark"]) .navbar-collapse {
+  :root:not([data-bs-theme="dark"]) .navbar-collapse,
+  [data-bs-theme="light"] .home-page .navbar-collapse,
+  :root:not([data-bs-theme="dark"]) .home-page .navbar-collapse {
     border-color: rgba(44, 42, 37, 0.14);
     background-color: rgba(248, 246, 241, 0.94);
+
+    .nav-link,
+    .search-toggle,
+    .dark-mode-toggle {
+      color: var(--text-primary) !important;
+      text-shadow: none;
+    }
   }
 
-  [data-bs-theme="light"] .home-page .navbar-collapse,
-  .home-page .navbar-collapse {
+  [data-bs-theme="dark"] .home-page .navbar-collapse {
     border-color: rgba(255, 255, 255, 0.18);
     background-color: rgba(0, 0, 0, 0.78);
 
