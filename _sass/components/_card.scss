@@ -2,10 +2,14 @@
 // Card components
 // =============================================================
 
+.card {
+  border-radius: 0;
+}
+
 .card-academic {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
+  border-radius: 0;
   padding: var(--space-6);
   margin-bottom: var(--space-6);
   box-shadow: var(--shadow-sm);
@@ -24,7 +28,7 @@
 .section-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
+  border-radius: 0;
   padding: var(--space-8);
   margin-top: var(--space-6);
   margin-bottom: var(--space-6);

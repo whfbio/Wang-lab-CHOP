@@ -18,6 +18,11 @@
     filter: brightness(0.92);
   }
 
+  .research-card:hover,
+  .latest-publication-card:hover {
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.5);
+  }
+
   // MathJax SVG equations — force light color
   mjx-container svg {
     color: var(--text-primary) !important;

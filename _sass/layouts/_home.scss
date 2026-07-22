@@ -323,7 +323,7 @@
 // Banner image — editorial frame with caption
 .banner-frame {
   margin: var(--space-8) 0;
-  border-radius: var(--radius-xl);
+  border-radius: 0;
   overflow: hidden;
   box-shadow: var(--shadow-md);
   border: 1px solid var(--border-color);
@@ -347,6 +347,19 @@
     font-style: italic;
     border-top: 1px solid var(--border-color);
     background-color: var(--bg-secondary);
+  }
+}
+
+.latest-publication-card {
+  transition:
+    border-color var(--transition-base),
+    box-shadow var(--transition-slow),
+    transform var(--transition-slow);
+
+  &:hover {
+    border-color: var(--accent);
+    box-shadow: 0 14px 34px rgba(44, 42, 37, 0.16);
+    transform: translateY(-6px);
   }
 }
 

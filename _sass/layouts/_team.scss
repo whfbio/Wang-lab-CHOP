@@ -15,7 +15,7 @@
     var(--bg-secondary) 100%
   );
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
+  border-radius: 0;
   padding: var(--space-8) var(--space-6);
   text-align: center;
   transition: box-shadow var(--transition-slow), transform var(--transition-slow);

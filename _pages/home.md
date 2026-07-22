@@ -7,7 +7,7 @@ permalink: /
 
 ### Latest Publication
 
-<div class="banner-frame" markdown="0">
+<div class="banner-frame latest-publication-card" markdown="0">
 <a href="https://doi.org/10.1101/2025.03.10.642473" target="_blank" rel="noopener noreferrer" class="feature-paper-link" aria-label="Open paper website">
 <img src="{{ site.url }}{{ site.baseurl }}/images/research/heartatlas_scheme.png" alt="Postnatal heart atlas schematic" loading="lazy">
 </a>
