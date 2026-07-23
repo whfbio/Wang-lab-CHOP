@@ -5,11 +5,10 @@ sitemap: false
 permalink: /research/
 ---
 
-<h2 class="research-page-title">Research</h2>
-
-<section class="research-word-cloud-section">
-{% include word-cloud.html %}
-</section>
+<header class="editorial-page-header" markdown="0">
+<h1 class="research-page-title">Research</h1>
+<p class="editorial-page-lede">We combine in vivo perturbation, single-cell and spatial genomics, stem-cell models, and computational analysis to understand cardiovascular biology.</p>
+</header>
 
 <div class="research-grid">
 
@@ -38,3 +37,7 @@ permalink: /research/
 </div>
 
 </div>
+
+<section class="research-word-cloud-section">
+{% include word-cloud.html %}
+</section>

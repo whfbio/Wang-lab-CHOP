@@ -5,13 +5,20 @@ sitemap: false
 permalink: /team/
 ---
 
-## Team
+<header class="editorial-page-header" markdown="0">
+<h1>Team</h1>
+<p class="editorial-page-lede">Meet the people building the Wang Lab and the open roles for researchers who want to join.</p>
+</header>
 
-**We are recruiting postdoctoral researchers, PhD students, and research technicians.**
+<div class="editorial-note" markdown="0">
+<div class="editorial-note-title"><i class="fa-solid fa-user-plus"></i> Recruiting</div>
+<p>We are recruiting postdoctoral researchers, PhD students, and research technicians.</p>
+</div>
 
-## Principal Investigator
+<section class="editorial-section">
+<h2 class="editorial-section-heading">§ Principal Investigator</h2>
 
-<div class="section-card">
+<div class="editorial-panel">
 <div class="pi-card">
 <a href="{{ site.url }}{{ site.baseurl }}/haofei-wang/" class="pi-card-photo-link" aria-label="Open Haofei Wang CV page">
 <img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}" class="pi-photo" alt="Haofei Wang" loading="lazy">
@@ -36,9 +43,11 @@ permalink: /team/
 </div>
 </div>
 </div>
+</section>
 
 {% if site.data.team_members.size > 0 %}
-## Open Roles
+<section class="editorial-section">
+<h2 class="editorial-section-heading">§ Open Roles</h2>
 
 <div class="team-grid" markdown="0">
 {% for member in site.data.team_members %}
@@ -52,4 +61,5 @@ permalink: /team/
 </div>
 {% endfor %}
 </div>
+</section>
 {% endif %}

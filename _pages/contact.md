@@ -5,9 +5,12 @@ sitemap: false
 permalink: /contact/
 ---
 
-## Contact
+<header class="editorial-page-header" markdown="0">
+<h1>Contact</h1>
+<p class="editorial-page-lede">Find the Wang Lab location, email, and contact details for future lab inquiries.</p>
+</header>
 
-<div class="contact-grid" markdown="0">
+<div class="contact-grid editorial-contact-grid" markdown="0">
 <div class="contact-map-card">
 <iframe
   title="Map to Wang Lab"
@@ -17,8 +20,8 @@ permalink: /contact/
 </iframe>
 </div>
 
-<div class="section-card contact-info-card">
-<h3>Wang Lab @ CHOP</h3>
+<div class="editorial-panel contact-info-card">
+<h2 class="editorial-section-heading">§ Wang Lab @ CHOP</h2>
 <div class="contact-info-list">
 <div class="contact-info-item">
 <i class="fa-solid fa-location-dot"></i>

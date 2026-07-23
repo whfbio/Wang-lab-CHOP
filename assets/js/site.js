@@ -170,7 +170,7 @@
   var heroIndex = 0;
   var heroTimer = null;
   var heroData = [
-    { title: 'Haofei Wang Lab @\u00a0CHOP', label: 'Mapping Cardiovascular Cell States From Development To Maturation', href: '/about' },
+    { title: 'Wang Lab', titleHtml: 'Wang Lab <span class="home-hero-affiliation">@\u00a0CHOP\u00a0CVI</span>', label: 'Mapping Cardiovascular Cell States From Development To Maturation', href: '/about' },
     { title: 'Research', label: 'The Science We Love', href: '/research' },
     { title: 'Team', label: 'Science Works Better Together', href: '/team' },
     { title: 'Fun', label: 'Life Beyond The Lab', href: '/fun' },
@@ -190,7 +190,11 @@
     }
 
     if (heroTitle && heroData[heroIndex]) {
-      heroTitle.textContent = heroData[heroIndex].title;
+      if (heroData[heroIndex].titleHtml) {
+        heroTitle.innerHTML = heroData[heroIndex].titleHtml;
+      } else {
+        heroTitle.textContent = heroData[heroIndex].title;
+      }
     }
 
     if (heroLink && heroData[heroIndex]) {
