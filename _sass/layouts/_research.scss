@@ -293,6 +293,12 @@
   }
 }
 
+.project-page-header ~ .editorial-section .editorial-panel::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .research-card {
     transition: none;
@@ -309,7 +315,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
   .research-grid {
     grid-template-columns: 1fr;
   }

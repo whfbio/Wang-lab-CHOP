@@ -68,3 +68,11 @@
     transition: none;
   }
 }
+
+@media (max-width: 900px) {
+  .fade-in-section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
