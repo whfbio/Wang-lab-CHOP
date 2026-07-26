@@ -12,19 +12,18 @@ permalink: /about/
 
 <div class="editorial-note editorial-note-success" markdown="0">
 <div class="editorial-note-title"><i class="fa-solid fa-microscope"></i> Opening in Jan 2027</div>
-<p>The lab will open at the Children's Hospital of Philadelphia and the University of Pennsylvania. We welcome inquiries from prospective postdoctoral researchers, PhD students, and research technicians.</p>
+<p>The lab will open at the Children's Hospital of Philadelphia and the University of Pennsylvania.</p>
 </div>
 
 <section class="editorial-section">
-<h2 class="editorial-section-heading">§ Lab</h2>
+<h2 class="editorial-section-heading">§ About the Lab</h2>
 
-<div class="profile-card about-lab-card editorial-panel">
+<div class="about-lab-card editorial-panel">
 <div class="about-lab-logo">
 <img src="{{ "/images/logo_color.png" | relative_url }}" alt="Wang Lab logo" loading="lazy">
 </div>
 <div class="about-lab-copy">
-<h3 class="profile-name">About the Lab</h3>
-<p class="profile-summary">The Wang Lab investigates the molecular and cellular mechanisms that regulate heart development, maturation, disease, and regeneration. We integrate chromatin biology, single-cell and spatial genomics, stem-cell models, and in vivo functional genomics to connect human genetic discoveries with mechanistic cardiovascular biology.</p>
+<p>The Wang Lab investigates the molecular and cellular mechanisms that regulate heart development, maturation, disease, and regeneration. We integrate chromatin biology, single-cell and spatial genomics, stem-cell models, and in vivo functional genomics to connect human genetic discoveries with mechanistic cardiovascular biology.</p>
 </div>
 </div>
 </section>

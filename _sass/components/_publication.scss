@@ -121,6 +121,10 @@
   border-top-color: var(--accent);
 }
 
+.editorial-note + .editorial-note-pinned {
+  margin-top: calc(-1 * var(--space-6));
+}
+
 .editorial-list {
   max-width: var(--container-max);
   margin: 0;

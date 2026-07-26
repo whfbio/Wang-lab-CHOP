@@ -169,21 +169,38 @@
   var heroLink = document.querySelector('[data-hero-link]');
   var heroIndex = 0;
   var heroTimer = null;
+  var homeHeroTitle = 'Wang Lab <span class="home-hero-affiliation">@\u00a0CHOP\u00a0CVI</span>';
+  var homeHeroLabel = 'Cardiovascular development, maturation, disease, and regeneration';
+  var defaultHeroDuration = 10000;
   var heroData = [
-    { title: 'Wang Lab', titleHtml: 'Wang Lab <span class="home-hero-affiliation">@\u00a0CHOP\u00a0CVI</span>', label: 'Mapping Cardiovascular Cell States From Development To Maturation', href: '/about' },
-    { title: 'Research', label: 'The Science We Love', href: '/research' },
-    { title: 'Team', label: 'Science Works Better Together', href: '/team' },
-    { title: 'Fun', label: 'Life Beyond The Lab', href: '/fun' },
-    { title: 'Contact', label: 'Get In Touch!', href: '/contact/' }
+    { titleHtml: homeHeroTitle, label: homeHeroLabel, href: '/about', duration: defaultHeroDuration },
+    { titleHtml: homeHeroTitle, label: homeHeroLabel, href: '/about', duration: defaultHeroDuration },
+    { titleHtml: homeHeroTitle, label: homeHeroLabel, href: '/about', duration: 12000 }
   ];
 
-  function showHeroSlide(index) {
+  function syncHeroVideoPlayback() {
+    heroSlides.forEach(function (slide) {
+      var video = slide.querySelector('video');
+      if (!video) return;
+
+      if (slide.classList.contains('active')) {
+        video.currentTime = 0;
+        video.play().catch(function () {});
+      } else {
+        video.pause();
+      }
+    });
+  }
+
+  function showHeroSlide(index, resetTimer) {
     if (!heroSlides.length) return;
     heroIndex = (index + heroSlides.length) % heroSlides.length;
 
     heroSlides.forEach(function (slide, slideIndex) {
       slide.classList.toggle('active', slideIndex === heroIndex);
     });
+
+    syncHeroVideoPlayback();
 
     if (heroKicker && heroData[heroIndex]) {
       heroKicker.textContent = heroData[heroIndex].label;
@@ -201,33 +218,36 @@
       heroLink.setAttribute('href', heroData[heroIndex].href);
       heroLink.textContent = 'Learn More';
     }
+
+    if (resetTimer !== false) {
+      startHeroAutoRotate();
+    }
   }
 
   function startHeroAutoRotate() {
     if (heroTimer) {
-      window.clearInterval(heroTimer);
+      window.clearTimeout(heroTimer);
     }
 
-    heroTimer = window.setInterval(function () {
+    var currentSlideDuration = (heroData[heroIndex] && heroData[heroIndex].duration) || defaultHeroDuration;
+    heroTimer = window.setTimeout(function () {
       showHeroSlide(heroIndex + 1);
-    }, 10000);
+    }, currentSlideDuration);
   }
 
   if (heroSlides.length > 0) {
-    showHeroSlide(0);
+    showHeroSlide(0, false);
     startHeroAutoRotate();
 
     if (heroPrev) {
       heroPrev.addEventListener('click', function () {
         showHeroSlide(heroIndex - 1);
-        startHeroAutoRotate();
       });
     }
 
     if (heroNext) {
       heroNext.addEventListener('click', function () {
         showHeroSlide(heroIndex + 1);
-        startHeroAutoRotate();
       });
     }
   }

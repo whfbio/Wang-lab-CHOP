@@ -4,11 +4,17 @@ layout: default
 
 <section class="home-image-hero" aria-label="Wang Lab hero carousel">
   <div class="home-hero-slides" aria-hidden="true">
-    <div class="home-hero-slide active" style="background-image: url('{{ "/images/research/heartatlas_profile.png" | relative_url }}');"></div>
-    <div class="home-hero-slide" style="background-image: url('{{ "/images/research/ncl_z_stack_gfp_positive.gif" | relative_url }}');"></div>
-    <div class="home-hero-slide" style="background-image: url('{{ "/images/team-hero.png" | relative_url }}');"></div>
-    <div class="home-hero-slide" style="background-image: url('{{ "/images/fun-hero.png" | relative_url }}');"></div>
-    <div class="home-hero-slide" style="background-image: url('{{ "/images/contact-hero.png" | relative_url }}');"></div>
+    <div class="home-hero-slide active" style="background-image: url('{{ "/images/research/ncl_z_stack_gfp_positive.gif" | relative_url }}');"></div>
+    <div class="home-hero-slide home-hero-slide--video">
+      <video class="home-hero-video" autoplay muted loop playsinline preload="metadata">
+        <source src="{{ "/images/hero/Supp_Movie_2.mov" | relative_url }}" type="video/quicktime">
+      </video>
+    </div>
+    <div class="home-hero-slide home-hero-slide--video">
+      <video class="home-hero-video" autoplay muted loop playsinline preload="metadata">
+        <source src="{{ "/images/hero/penn-flyover.mp4" | relative_url }}" type="video/mp4">
+      </video>
+    </div>
   </div>
   <div class="home-image-hero__content">
     <h1 data-hero-title>Wang Lab <span class="home-hero-affiliation">@&nbsp;CHOP&nbsp;CVI</span></h1>

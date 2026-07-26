@@ -77,17 +77,9 @@
   margin-bottom: var(--space-6);
   text-align: left;
 
-  .profile-name {
-    margin-bottom: 0;
-
-    &::after {
-      display: none;
-    }
-  }
-
-  .profile-summary {
+  p {
     font-size: 1rem;
-    margin-top: var(--space-4);
+    margin-top: 0;
   }
 
   @media (max-width: 640px) {

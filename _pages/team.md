@@ -47,7 +47,7 @@ permalink: /team/
 
 {% if site.data.team_members.size > 0 %}
 <section class="editorial-section">
-<h2 class="editorial-section-heading">§ Open Roles</h2>
+<h2 id="open-roles" class="editorial-section-heading">§ Open Roles</h2>
 
 <div class="team-grid" markdown="0">
 {% for member in site.data.team_members %}
