@@ -132,15 +132,24 @@ For most internal tabs, use this structure:
 - The first paragraph in each project subsection uses a project-page-only drop cap. Keep this scoped to project pages unless a sitewide editorial change is requested.
 - Project figures use:
   - `.project-hero` for the top project visual
+  - `.project-hero-lightbox` with `.project-hero-lightbox-frame` when a dark-mode page needs a white backing behind the image but not behind the caption
   - `.project-animation` and `.project-animation-inline` for inline animated atlas GIFs
   - `.project-scheme` for workflow/schematic figures
+  - `.project-scheme-narrow` for a small left-floated schematic with nearby text wrapping around it
 - Use `<figure>` and `<figcaption>` for project visuals. Captions should be short, factual, and styled through `_sass/layouts/_research.scss`.
+- Project figure captions are intentionally a little larger than before (`0.875rem`) and should stay consistent across `.project-hero`, `.project-animation`, and `.project-scheme`.
 - Prefer browser-safe image formats in `images/research/`. Convert TIFF source files to PNG before embedding.
 - GIFs used on project pages should be cropped and downsampled enough to avoid unnecessary black space and large page weight, while preserving the scientific signal.
 - Current postnatal project media:
   - `images/research/ncl_z_stack_gfp_positive.gif` is the top hero GIF.
   - `images/research/postnatal_atlas.gif` is the inline spatial/temporal atlas GIF.
   - `images/research/pip_seq_scheme.png` is the in vivo Perturb-seq workflow scheme.
+- Current direct cardiac reprogramming media:
+  - `images/research/am_profile.png` is the top hero image and matches the `/research/` card image.
+  - `images/research/am_scheme.jpg` appears in the minimal-cocktail section as a left-floated `.project-scheme project-scheme-narrow` figure with a citation caption.
+- Current congenital heart disease genetics media:
+  - `images/research/alpha_genome_chd.png` is the top hero image.
+  - The CHD hero uses `.project-hero-lightbox`; keep the white background confined to `.project-hero-lightbox-frame` so the caption stays on the normal page background.
 
 ### Publications (`/publications/`)
 

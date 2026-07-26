@@ -202,9 +202,19 @@
     margin-top: var(--space-2);
     color: var(--text-muted);
     font-family: var(--font-sans);
-    font-size: 0.78rem;
+    font-size: 0.875rem;
     line-height: 1.35;
   }
+}
+
+.project-hero-lightbox {
+  background-color: transparent;
+}
+
+.project-hero-lightbox-frame {
+  display: block;
+  padding: var(--space-4);
+  background-color: #ffffff;
 }
 
 .project-animation {
@@ -222,7 +232,7 @@
     margin-top: var(--space-2);
     color: var(--text-muted);
     font-family: var(--font-sans);
-    font-size: 0.78rem;
+    font-size: 0.875rem;
     line-height: 1.35;
   }
 }
@@ -241,9 +251,15 @@
     margin-top: var(--space-2);
     color: var(--text-muted);
     font-family: var(--font-sans);
-    font-size: 0.78rem;
+    font-size: 0.875rem;
     line-height: 1.35;
   }
+}
+
+.project-scheme-narrow {
+  float: left;
+  width: min(38%, 400px);
+  margin: 0 var(--space-4) var(--space-2) 0;
 }
 
 .project-animation-inline {
@@ -303,6 +319,12 @@
   }
 
   .project-animation-inline {
+    float: none;
+    width: 100%;
+    margin: var(--space-4) 0;
+  }
+
+  .project-scheme-narrow {
     float: none;
     width: 100%;
     margin: var(--space-4) 0;
