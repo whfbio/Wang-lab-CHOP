@@ -46,10 +46,10 @@ nav_pages:
     title: Publications
   - name: team
     title: Team
-  - name: fun
-    title: Fun
-  - name: resource
-    title: Resource
+  # - name: fun
+  #   title: Fun
+  # - name: resource
+  #   title: Resource
   - name: allnews.html
     title: News
   - name: contact

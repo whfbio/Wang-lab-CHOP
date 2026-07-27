@@ -20,12 +20,10 @@ permalink: /team/
 
 <div class="editorial-panel">
 <div class="pi-card">
+<div class="pi-media">
 <a href="{{ site.url }}{{ site.baseurl }}/haofei-wang/" class="pi-card-photo-link" aria-label="Open Haofei Wang CV page">
 <img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}" class="pi-photo" alt="Haofei Wang" loading="lazy">
 </a>
-<div>
-<h3 class="pi-name"><a href="{{ site.url }}{{ site.baseurl }}/haofei-wang/">Haofei Wang</a></h3>
-<p style="font-style: italic; color: var(--text-secondary);">Principal Investigator, {{ site.institution }}</p>
 <div class="pi-links">
 <a href="{{ site.url }}{{ site.baseurl }}/haofei-wang/" class="icon-link" title="CV"><i class="ai ai-cv"></i></a>
 {% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
@@ -33,6 +31,10 @@ permalink: /team/
 {% if site.links.linkedin and site.links.linkedin != "" %}<a href="{{ site.links.linkedin }}" target="_blank" rel="noopener noreferrer" class="icon-link" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>{% endif %}
 {% if site.links.twitter and site.links.twitter != "" %}<a href="{{ site.links.twitter }}" target="_blank" rel="noopener noreferrer" class="icon-link" title="X"><i class="fa-brands fa-x-twitter"></i></a>{% endif %}
 </div>
+</div>
+<div>
+<h3 class="pi-name"><a href="{{ site.url }}{{ site.baseurl }}/haofei-wang/">Haofei Wang</a></h3>
+<p style="font-style: italic; color: var(--text-secondary);">Principal Investigator, {{ site.institution }}</p>
 {% if site.data.pi[0].education %}
 <ul style="margin-top: var(--space-4);">
 {% for education in site.data.pi[0].education %}
