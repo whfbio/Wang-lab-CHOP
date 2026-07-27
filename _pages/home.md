@@ -5,11 +5,6 @@ sitemap: false
 permalink: /
 ---
 
-<div class="editorial-note editorial-note-pinned" markdown="0">
-<div class="editorial-note-title"><i class="fa-solid fa-thumbtack"></i> Pinned</div>
-<p><a href="{{ site.url }}{{ site.baseurl }}/team/#open-roles"><strong>We are actively recruiting Postdoc, PhD, and Research Technician to join the lab!</strong></a></p>
-</div>
-
 <header class="editorial-page-header" markdown="0">
 <h1>Latest Publication</h1>
 <p class="editorial-page-lede">A featured recent study from the Wang Lab.</p>

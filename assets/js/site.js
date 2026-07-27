@@ -175,7 +175,7 @@
   var heroData = [
     { titleHtml: homeHeroTitle, label: homeHeroLabel, href: '/about', duration: defaultHeroDuration },
     { titleHtml: homeHeroTitle, label: homeHeroLabel, href: '/about', duration: defaultHeroDuration },
-    { titleHtml: homeHeroTitle, label: homeHeroLabel, href: '/about', duration: 12000 }
+    { titleHtml: homeHeroTitle, label: homeHeroLabel, href: '/about', duration: 11000 }
   ];
 
   function syncHeroVideoPlayback() {

@@ -226,7 +226,14 @@
 
 .home-sections {
   display: grid;
-  gap: var(--space-12);
+  gap: var(--space-6);
+}
+
+.home-sections > .editorial-note-pinned {
+  width: 100%;
+  max-width: none;
+  margin-bottom: 0;
+  box-sizing: border-box;
 }
 
 .home-detail-grid {
@@ -243,6 +250,8 @@
 
 .home-news-column {
   display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
 }
 
 .home-news-card {
