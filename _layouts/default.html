@@ -5,6 +5,16 @@
 
   <body class="{% if page.url == '/' %}home-page{% endif %}">
 
+    {% if page.url == '/' %}
+    <div class="home-recruiting-banner" role="status">
+      <a href="{{ site.url }}{{ site.baseurl }}/team/#open-roles">
+        <span class="home-recruiting-banner__label">Recruiting</span>
+        <span class="home-recruiting-banner__text">We are actively recruiting postdocs, PhD students, and research technicians to join the Wang Lab.</span>
+        <span class="home-recruiting-banner__button">Learn More</span>
+      </a>
+    </div>
+    {% endif %}
+
     {% include header.html %}
 
     <main class="site-container">
