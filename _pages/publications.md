@@ -28,6 +28,14 @@ permalink: /publications/
 </div>
 
 <div class="publication">
+<div class="publication-type">Article</div>
+<div class="publication-body">
+<h3><a href="https://www.sciencedirect.com/science/article/pii/S0022282826001240?dgcid=coauthor" target="_blank" rel="noopener noreferrer">Gfpt2 modulates fibroblast activation by glutathione metabolism.</a></h3>
+<p class="publication-meta">Takasugi, P., Farber, G., Du, L., Ricketts, S. N., Rooney, S. E., Spurlock, B., <strong>Wang, H.</strong>, Liu, J. and Qian, L. · Journal of Molecular and Cellular Cardiology</p>
+</div>
+</div>
+
+<div class="publication">
 <div class="publication-type">Preview</div>
 <div class="publication-body">
 <h3><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Rebuilding+the+bridge%3A+Functional+AVN+cells+for+cardiac+repair" target="_blank" rel="noopener noreferrer">Rebuilding the bridge: Functional AVN cells for cardiac repair.</a></h3>
