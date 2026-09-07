@@ -14,6 +14,14 @@ permalink: /publications/
 <div class="publication">
 <div class="publication-type">Article</div>
 <div class="publication-body">
+<h3><a href="https://www.nature.com/articles/s44161-026-00861-z" target="_blank" rel="noopener noreferrer">Spatially guided in vivo single-cell functional genomics of postnatal heart.</a></h3>
+<p class="publication-meta"><strong>Wang, H.</strong>*, Dong, Y.*, Song, Y.*, Colon, M., Grosso, C., Yapundich, N., Ricketts, S., Liu, X., Farber, G., Liu, S. L., Qian, Y., Qian, L. and Liu, J. · Nature Cardiovascular Research · *co-first author</p>
+</div>
+</div>
+
+<div class="publication">
+<div class="publication-type">Article</div>
+<div class="publication-body">
 <h3><a href="https://www.nature.com/search?q=IVNS1ABP%20mutation%20drives%20cellular%20senescence%20in%20newly%20identified%20progeroid%20neuropathy" target="_blank" rel="noopener noreferrer">IVNS1ABP mutation drives cellular senescence in newly identified progeroid neuropathy.</a></h3>
 <p class="publication-meta">Yuan, F., Tan, Y. S., <strong>Wang, H.</strong>, Ali, A. N., Yuan, Q., Chou, S. M., Yen, Y. H., Narayanan, G., Zhou, L., Shboul, M. and Bonnard, C. · Nature Communications</p>
 </div>
@@ -28,14 +36,6 @@ permalink: /publications/
 </div>
 
 <h2 class="publication-section-heading">§ 2025</h2>
-
-<div class="publication">
-<div class="publication-type">Preprint</div>
-<div class="publication-body">
-<h3><a href="https://doi.org/10.1101/2025.03.10.642473" target="_blank" rel="noopener noreferrer">Charting Postnatal Heart Development Using In Vivo Single-Cell Functional Genomics.</a></h3>
-<p class="publication-meta"><strong>Wang, H.</strong>, Dong, Y., Song, Y., Colon, M., Yapundich, N., Ricketts, S., Liu, X., Farber, G., Qian, Y., Qian, L. and Liu, J. · bioRxiv</p>
-</div>
-</div>
 
 <div class="publication">
 <div class="publication-type">Preprint</div>
